@@ -15,7 +15,7 @@ export default function App() {
         <section className="App-content">
           <Link to="/">
             <figure className="App-logo">
-              <img alt='Giffy logo' src='/logo.png' />
+              <img alt='Giffy logo' src='./logo.png' />
             </figure>
           </Link>
           <GifsContextProvider>
@@ -25,7 +25,7 @@ export default function App() {
             />
             <Route
               component={SearchResults}
-              path="/search/:keyword"  />
+              path="/search/:keyword/:rating?"  />
             <Route
               component={Detail}
               path="/gif/:id"
